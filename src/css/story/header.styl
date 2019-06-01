@@ -1,0 +1,202 @@
+header
+	z-index set-index('overlay')
+	position absolute
+	top 0
+	left 50%
+	width 100%
+	max-width 42rem
+	background-color $off-black
+	padding 0 1rem
+	transform translate(-50%, -100% - 6rem)
+	transition transform 500ms ease-in-out
+	+mq('bp-4')
+		border-radius 6px
+		padding 0 2rem
+
+	&.is-visible
+		transform translate(-50%, -3px)
+
+
+	a.wordmark
+		display block
+		border none
+		max-width 9rem
+		margin 1rem auto
+
+		svg
+			fill $gray
+			display block
+			width 100%
+	
+	.header__title
+		font-weight 500
+		text-align center
+		color $gray-light
+
+		strong
+			color $white
+		
+		a, a:visited
+			color $gray-light
+			border-bottom 1px solid currentColor
+
+		h1
+			margin 0
+			line-height 1.25
+			set-type-size(large, false)
+			+mq('bp-3')
+				set-type-size(x-large, false)
+			+mq('bp-5')
+				set-type-size(xx-large, false)
+		
+		p
+			font-weight 400
+			margin 0
+			margin-top 0.5rem
+			set-type-size(x-small, false)
+			line-height 1.4
+			+mq('bp-3')
+				set-type-size(small, false)
+	
+.header__note
+	margin-top 2rem
+	color $off-white
+	+mq('bp-3')
+		margin-top 3rem
+	p
+		set-type-size(x-small, false)
+		line-height 1.4
+		+mq('bp-3')
+			set-type-size(small, false)
+	button
+		display inline
+		background none
+		color currentColor
+		font-size 1em
+		border-bottom 1px solid currentColor
+
+button.header__toggle
+	display block
+	background $bg
+	color $gray
+	width 3rem
+	height 3rem
+	margin 0 auto
+	position absolute
+	left 50%
+	bottom 0
+	transform translate(-50%, 50%)
+	border-radius 50%
+	svg
+		display block
+		width 75%
+		height 75%	
+		stroke $primary
+		margin-left 12.5%
+
+.header__micro
+	z-index set-index('overlay')
+	position absolute
+	top 0
+	left 50%
+	width 100%
+	max-width 42rem
+	background-color $off-black
+	font-family $sans
+	padding 0 1rem
+	transform translate(-50%, -100% - 6rem)
+	transform translate(-50%, -3px)
+	+mq('bp-4')
+		border-radius 6px
+		padding 0 2rem
+	
+	p
+		font-weight 500
+		text-align center
+		color $gray-light
+		set-type-size(small, false)
+		line-height 1.4
+		+mq('bp-3')
+			set-type-size(medium, false)
+	
+	strong
+		color $white
+
+	&.is-visible
+		transform translate(-50%, -3px)
+
+button.micro__toggle
+	display block
+	background $bg
+	color $primary
+	width 3rem
+	height 3rem
+	margin 0 auto
+	position absolute
+	left 50%
+	bottom 0
+	transform translate(-50%, 50%)
+	border-radius 50%
+	set-type-size(small, false)
+	line-height 1
+	text-transform lowercase
+	em
+		display inline-block
+		font-style normal
+		transform translateY(25%)
+	svg
+		display block
+		width 75%
+		height 75%	
+		stroke $primary
+		margin-left 12.5%
+
+a.logo
+	position fixed
+	bottom 0.25rem
+	left 0.5rem
+	width 9rem
+	z-index set-index('overlay')
+	border none
+	opacity 1
+	+mq('bp-5')
+		width 9rem
+		top 0.5rem
+		bottom auto
+
+	span
+		set-type-size(x-small, false)
+		text-shadow 0 0 3px $bg
+		// text-transform uppercase
+		font-weight 600
+		line-height 1
+		margin 0
+		transform translate(0.25rem, -50%)
+		display inline-block
+		color $gray-light
+		// text-transform capitalize
+	.st0
+		fill $primary
+	.st1
+		fill darken($primary, 25)
+
+.btn--about
+	z-index set-index('overlay') + 1
+	position absolute
+	top 1rem
+	right 1rem
+	background-color $off-black
+	color $primary
+	font-weight 700
+	line-height 1
+	width 2rem
+	height 2rem
+	border-radius 50%
+	border 2px solid $primary
+	display none
+	+mq('bp-5')
+		display block 
+
+header .key
+	+mq('bp-6')
+		display none

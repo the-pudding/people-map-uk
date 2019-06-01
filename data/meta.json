@@ -1,0 +1,21 @@
+{
+	"title": "A People Map of the UK",
+	"description": "Where city names are replaced by their most Wikipedia’ed resident.",
+	"site": "https://pudding.cool",
+	"siteName": "The Pudding",
+	"url": "https://pudding.cool/2019/06/people-map-uk/",
+	"keywords": "people, uk, wikipedia, famous, city, town",
+	"imgFacebook": "https://pudding.cool/2019/06/people-map-uk/assets/social/social-facebook.png",
+	"imgTwitter": "https://pudding.cool/2019/06/people-map-uk/assets/social/social-twitter.png",
+	"author": {
+		"name": "Matt Daniels",
+		"url": "https://pudding.cool/author/matt-daniels",
+		"twitterHandle": "@puddingviz"
+	},
+	"author2": {
+		"name": "Russell Goldenberg",
+		"url": "https://pudding.cool/author/russell-goldenberg"
+	},
+	"analytics": "UA-90667923-1",
+	"lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis neque sit amet sollicitudin vehicula. Maecenas fringilla mi non lacus mattis elementum. Curabitur dignissim faucibus justo."
+}

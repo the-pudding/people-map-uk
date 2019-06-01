@@ -1,0 +1,133 @@
+/* CUSTOM STORY STYLE */
+body
+	color $white
+	font-weight 400
+	font-family $sans
+	overflow hidden
+
+main
+	width 100%
+	height 100vh
+	overflow hidden
+
+#map
+	width 100%
+	height 100%
+
+.mapboxgl-ctrl-bottom-right
+	position fixed
+	// left 1.5rem
+	bottom 0
+	// right auto
+	// transform translate(100%, 0%)
+	+mq('bp-3')
+		transform translate(0)
+		right auto
+	a
+		border none
+
+.mapboxgl-ctrl-bottom-left
+	// left 2rem
+	// transform translate(32.5%, 5%)
+	display none
+	+mq('bp-3')
+		display block
+		transform translate(0, -75%)
+		
+	a
+		border none
+
+#info
+	margin 0
+	background rgba($bg, 0.9)
+	font-family $sans
+	set-type-size(small, true)
+	line-height 1.5
+	padding 0.75rem
+	padding-right 2.5rem
+	position fixed
+	bottom 0
+	left 50%
+	width 100%
+	display none
+	transform translate(-50%, 3px)
+	z-index set-index(overlay)
+	cursor pointer
+	user-select none
+	&.is-center
+		text-align center
+	&.is-visible
+		display block
+	+mq('bp-4')
+		border-radius 6px
+		max-width 21rem
+		padding-right 0.75rem
+	+mq('bp-7')
+		max-width 25rem
+	strong
+		font-weight 700
+		color $secondary
+	a
+		border none
+		vertical-align middle
+		display none
+		margin-left 0.5em
+		&.is-visible
+			display inline-block
+		svg
+			height 14px
+			width 14px
+
+
+.key
+	margin 0 auto
+	align-items center
+	justify-content center
+	display flex
+	font-weight 500
+
+.key__description
+	max-width 7.25rem
+	text-align right
+	line-height 1.2
+
+.key__figure
+	display flex
+	align-items center
+
+	p
+		text-transform uppercase
+		max-width 2.75rem
+		line-height 1.2
+		font-weight 400
+		&:first-of-type
+			text-align right
+	ul
+		display flex
+		align-items baseline
+		margin 0 0.5rem
+	li
+		font-weight 700
+		background-color rgba($secondary, 0.33)
+		border-radius 50%
+		margin 0 0.125em
+		text-align center
+		span
+			display inline-block
+			transform translateY(-25%)
+			text-shadow 0 0 2px $bg
+		&:nth-of-type(1)
+			font-size 14px
+			line-height 16px	
+			width 16px
+			height 16px
+		&:nth-of-type(2)
+			font-size 18px
+			line-height 20px
+			width 20px
+			height 20px
+		&:nth-of-type(3)
+			font-size 24px
+			line-height 26px
+			width 26px
+			height 26px
