@@ -116,7 +116,7 @@ function swapText(id) {
     { 'font-scale': 1 },
     '\n',
     {},
-    ['get', 'city'],
+    ['get', 'city_clean'],
     {
       'font-scale': 0.75,
       'text-font': ['literal', ['Roboto Mono Regular', 'Rubik Black']],
@@ -142,7 +142,7 @@ function setupMap() {
   map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/dock4242/cjwcr85ha07jg1cnrwue2201q',
-    center: [1.1743, 52.3555],
+    center: [-3.436, 55.3781],
     zoom: 4,
     // maxBounds: [[-180, 0], [-40, 75]],
     maxZoom: 14,
