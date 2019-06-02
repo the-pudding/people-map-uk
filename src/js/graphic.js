@@ -144,7 +144,7 @@ function setupMap() {
     style: 'mapbox://styles/dock4242/cjwcr85ha07jg1cnrwue2201q',
     center: [-3.436, 55.3781],
     zoom: 4,
-    // maxBounds: [[-180, 0], [-40, 75]],
+    maxBounds: [[-20, 45], [15, 65]],
     maxZoom: 14,
     minZoom: 4,
   });
