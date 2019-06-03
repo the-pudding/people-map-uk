@@ -48,10 +48,10 @@ function findHighlight(text) {
 }
 
 function updateInfo(feature) {
-  const { extract, name, link } = feature.properties;
-  if (currentPerson !== name) {
+  const { extract, link } = feature.properties;
+  if (currentPerson !== link) {
     const extractClean = extract.replace(/,,/g, ',');
-    currentPerson = name;
+    currentPerson = link;
     const text = extractClean;
     const index = findHighlight(text);
     let html = text;
@@ -93,6 +93,7 @@ function handleMove(e) {
   const visible = features.filter(
     d => d.layer.layout && d.layer.layout.visibility === 'visible'
   );
+
   if (visible.length) {
     const feature = visible.shift();
     updateInfo(feature);
